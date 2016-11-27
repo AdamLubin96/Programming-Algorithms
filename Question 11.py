@@ -31,14 +31,14 @@ class List(object):
           print ("List: ",",".join(values))
 
       def delete(self,N):
-          if N.prev != None: 
-              N.prev.next = N.next  
+          if N.prev != None:              
+              N.prev.next = N.next  # Replaces the current element with the next
           else:
-              l.head = N.next
+              l.head = N.next       #First elemnt replaces the next element and deletes first
           if N.next != None:
-              N.next.prev = N.prev
+              N.next.prev = N.prev  #The previous element equals the current 
           else:
-              l.tail = N.prev
+              l.tail = N.prev       #If tails is deleted it is replaced with the next element
             
           
 if __name__ == '__main__':
