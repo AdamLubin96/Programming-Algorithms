@@ -36,7 +36,7 @@ def postorder(tree):
 def in_order(tree):     #Tree is taken as input
     current_node = tree     #Start node
     new_list = []           #Will contain in order list
-    condition = 0           #Condition to initiate while loop
+    condition = False           #Condition to initiate while loop
 
     while not condition:
         if current_node is not None:
@@ -47,7 +47,7 @@ def in_order(tree):     #Tree is taken as input
              print(current_node.value)          #Elements are then removed from the list and pinted after echecking the right side of the tree and right children
              current_node = current_node.right
         else:
-             condition = 1                      #When all nodes have been visited and added condition changes to stop while loop
+             condition = True                      #When all nodes have been visited and added condition changes to stop while loop
 
 
 
