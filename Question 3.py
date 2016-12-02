@@ -12,6 +12,6 @@ def Perfect_Square():
         return higher_Square
     else:
         print("Its square root is " + (str(sqrt))) #If input is a perfect square, this will run
-        print("Is a perfect square ")
+        print("next lowest perfect square ")
         return higher_Square
         
